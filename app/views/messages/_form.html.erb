@@ -1,0 +1,6 @@
+<%= form_tag({ controller: :messages, action: :create }, remote: true, id: "message-form", class: "form") do %>
+  <div class="form-group">
+    <%= text_area_tag(:message, nil, class: "form-control") %>
+  </div>
+  <%= submit_tag("Send", class: "btn btn-primary") %>
+<% end %>
